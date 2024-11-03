@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "X:\\UT01336\\Activity 43 (19th Oct)\\TaskManager-Angular-\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj": {}
+    "X:\\New folder\\Task_Manager\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj": {}
   },
   "projects": {
-    "X:\\UT01336\\Activity 43 (19th Oct)\\TaskManager-Angular-\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj": {
+    "X:\\New folder\\Task_Manager\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "X:\\UT01336\\Activity 43 (19th Oct)\\TaskManager-Angular-\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj",
+        "projectUniqueName": "X:\\New folder\\Task_Manager\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj",
         "projectName": "TaskManagerAPI",
-        "projectPath": "X:\\UT01336\\Activity 43 (19th Oct)\\TaskManager-Angular-\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj",
+        "projectPath": "X:\\New folder\\Task_Manager\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj",
         "packagesPath": "C:\\Users\\UT01336\\.nuget\\packages\\",
-        "outputPath": "X:\\UT01336\\Activity 43 (19th Oct)\\TaskManager-Angular-\\TaskManagerAPI\\TaskManagerAPI\\obj\\",
+        "outputPath": "X:\\New folder\\Task_Manager\\TaskManagerAPI\\TaskManagerAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\UT01336\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,6 +46,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BCrypt.Net-Core": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.10, )"

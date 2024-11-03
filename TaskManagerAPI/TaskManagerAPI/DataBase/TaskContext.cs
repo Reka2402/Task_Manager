@@ -36,6 +36,7 @@ namespace TaskManagerAPI.DataBase
          
 
         }
+        public DbSet<TaskManagerAPI.Models.UserLogin> UserLogin { get; set; } = default!;
 
 
     }

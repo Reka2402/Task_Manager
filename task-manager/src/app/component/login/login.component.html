@@ -1,0 +1,25 @@
+<h3>Login Form</h3>
+<form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" [(ngModel)]="user.emailAddress" name="email" class="form-control" aria-describedby="emailHelp" #mail="ngModel" required email/>
+        <div id="emailHelp" class="form-text text-danger" *ngIf="mail.invalid">Email Address is invalid</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" [(ngModel)]="user.password" name="password" #pw="ngModel" required minlength ="6"/>
+        <div id="Help" class="form-text text-danger" *ngIf="pw.invalid">Password is invalid</div>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Remember me</label>
+      </div>
+      <button class="btn btn-primary" type="submit" [disabled]="loginForm.invalid">Submit</button>
+    </div>
+
+    <div class="col"><img src="/2024.11.02 - Lab work - signin-image.jpg" alt="signinimage"></div>
+  </div>
+  
+</form>

@@ -92,7 +92,7 @@ namespace TaskManagerAPI.Controllers
             if (user == null)
             {
                 return NotFound();
-            }
+            } 
 
             _context.Users.Remove(user);
             await _context.SaveChangesAsync();
