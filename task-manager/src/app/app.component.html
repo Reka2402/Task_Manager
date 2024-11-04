@@ -1,82 +1,65 @@
-<!-- <a [routerLink]="['/tasks']">SignIn</a> 
-<a [routerLink]="['/users']">SignUp</a>
-   -->
-<router-outlet></router-outlet>
 <header>
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-        
-          <span class="display-6" style="font-size: 22px; padding-left: 20px; font-weight: bold;">UNICOM TIC</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-  </header>
-  
-  <main style="padding: 57px 0px 0px 0px; background-color: rgb(230, 226, 226) !important; display: flex;height:100vh;">
-    <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px; background-color: rgb(49, 46, 46) !important;">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-        <i class="bi bi-list-task" style="font-size: 1.5rem; color: cornflowerblue; padding-right: 5px;"></i>
-        <span class="fs-5">Task Management</span>
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <span class="display-6 text-white" style="font-size: 22px; font-weight: bold;">UNICOM TIC</span>
       </a>
-      <hr>
-  
-      <ul class="nav nav-pills flex-column mb-auto">
-        <li class="nav-item">
-          <a routerLink="#" class="nav-link text-white" routerLinkActive="active" aria-current="page">
-            <svg class="bi me-2" width="16" height="16"><use xlink:href="#home" /></svg>
-            Home
-          </a>
-        </li>
-       
-        <li>
-          <a routerLink="/tasks" class="nav-link text-white" routerLinkActive="active">
-            <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-            Tasks
-          </a>
-        </li>
-        <li>
-          <a routerLink="/users" class="nav-link text-white" routerLinkActive="active">
-            <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
-            Users
-          </a>
-        </li>
-        <li>
-          <a routerLink="/SignIn" class="nav-link text-white" routerLinkActive="active">
-            <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
-            Login
-          </a>
-        </li>
-        <li>
-          <a routerLink="/SignUp" class="nav-link text-white" routerLinkActive="active">
-            <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
-            Register
-          </a>
-        </li>
-       
-      </ul>
-  
-      <hr>
-  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0"></ul>
+        <form class="d-flex">
+          <input class="form-control me-2 border-primary" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
     </div>
-    <div style="width: 80%; overflow-y: scroll;" class="shadow p-4 m-4 bg-white rounded ">
-      <router-outlet></router-outlet>
-    </div>
-  
-  
-  </main>
-  
-  
-  
+  </nav>
+</header>
+
+<main style="padding: 57px 0 0; background-color: #f0f0f5; display: flex; height: 100vh;">
+
+  <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-gradient" style="width: 280px; background-color: #333;">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+      <i class="bi bi-list-task" style="font-size: 1.5rem; color: #e91e63; padding-right: 5px;"></i>
+      <span class="fs-5 fw-bold">Task Management</span>
+    </a>
+    <hr>
+
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a routerLink="#" class="nav-link text-white" routerLinkActive="active" aria-current="page">
+          <i class="bi bi-house-door-fill me-2" style="color: #ff6f61;"></i> Home
+        </a>
+      </li>
+      <li>
+        <a routerLink="/tasks" class="nav-link text-white" routerLinkActive="active">
+          <i class="bi bi-clipboard-data me-2" style="color: #42a5f5;"></i> Tasks
+        </a>
+      </li>
+      <li>
+        <a routerLink="/users" class="nav-link text-white" routerLinkActive="active">
+          <i class="bi bi-people-fill me-2" style="color: #26a69a;"></i> Users
+        </a>
+      </li>
+      <li>
+        <a routerLink="/SignIn" class="nav-link text-white" routerLinkActive="active">
+          <i class="bi bi-box-arrow-in-right me-2" style="color: #ff7043;"></i> Login
+        </a>
+      </li>
+      <li>
+        <a routerLink="/SignUp" class="nav-link text-white" routerLinkActive="active">
+          <i class="bi bi-person-plus-fill me-2" style="color: #8e24aa;"></i> Register
+        </a>
+      </li>
+    </ul>
+    <hr>
+  </div>
+
+ 
+  <div class="flex-grow-1 shadow-lg p-4 m-4 bg-light rounded" style="overflow-y: scroll; border: 1px solid #ddd;">
+    <router-outlet></router-outlet>
+  </div>
+</main>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -10,8 +11,17 @@ export class LoginComponent {
     emailAddress:'',
     password:'',
   }
-  onSubmit(loginForm:any){
-    console.log(loginForm.value);
+  // onSubmit(loginForm:any){
+  //   console.log(loginForm.value);
+  // }
+  onSubmit(form: NgForm) {
+    if (form.valid) {
+     
+        alert('Form Submitted!');
+    } else {
+      
+        form.control.markAllAsTouched();
+    }
   }
 
 }

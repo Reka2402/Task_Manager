@@ -7,15 +7,28 @@ import { Component } from '@angular/core';
 })
 export class RegisterComponent {
   user = {
-    fullname:'',
-    emailAddress:'',
-    password:'',
-    conformpassword:'',
-     role:'',
+    fullname: '',
+    emailAddress: '',
+    password: '',
+    confirmPassword: '',
+    role: '',
+    agreed: '',
 
   };
-  onRegister(RegisterForm:any){
+  onRegister(RegisterForm: any) {
     console.log(RegisterForm.value)
   }
+  passwordsMatch = true;
+
+  checkPasswords() {
+    this.passwordsMatch = this.user.password === this.user.confirmPassword;
+  }
+  // onRegister(form: NgForm) {
+  //   if (form.invalid) {
+  //       form.control.markAllAsTouched();
+  //       return;
+  //   }
+  
+
 
 }
