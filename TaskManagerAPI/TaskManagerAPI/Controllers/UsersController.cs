@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TaskManagerAPI.DataBase;
+using TaskManagerAPI.DTOs.RequestDTO;
 using TaskManagerAPI.Models;
 
 namespace TaskManagerAPI.Controllers
@@ -32,7 +33,7 @@ namespace TaskManagerAPI.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<User>> GetUser(int id)
         {
-            var user = await _context.Users.Include(a => a.Address).FirstOrDefaultAsync(a=> a.Id == id);
+            var user = await _context.Users.Include(a => a.Address).FirstOrDefaultAsync(a => a.Id == id);
 
             if (user == null)
             {
@@ -88,11 +89,11 @@ namespace TaskManagerAPI.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(int id)
         {
-            var user = await _context.Users.Include(a=> a.Address).FirstOrDefaultAsync(a => a.Id == id);
+            var user = await _context.Users.Include(a => a.Address).FirstOrDefaultAsync(a => a.Id == id);
             if (user == null)
             {
                 return NotFound();
-            } 
+            }
 
             _context.Users.Remove(user);
             await _context.SaveChangesAsync();
@@ -104,5 +105,12 @@ namespace TaskManagerAPI.Controllers
         {
             return _context.Users.Any(e => e.Id == id);
         }
+
+
+
+
+
     }
+
+
 }

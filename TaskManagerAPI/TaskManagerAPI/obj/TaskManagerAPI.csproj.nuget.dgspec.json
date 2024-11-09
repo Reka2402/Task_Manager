@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "X:\\New folder\\Task_Manager\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj": {}
+    "X:\\UT01336\\Activity 45(09th Oct)\\Task_Manager\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj": {}
   },
   "projects": {
-    "X:\\New folder\\Task_Manager\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj": {
+    "X:\\UT01336\\Activity 45(09th Oct)\\Task_Manager\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "X:\\New folder\\Task_Manager\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj",
+        "projectUniqueName": "X:\\UT01336\\Activity 45(09th Oct)\\Task_Manager\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj",
         "projectName": "TaskManagerAPI",
-        "projectPath": "X:\\New folder\\Task_Manager\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj",
+        "projectPath": "X:\\UT01336\\Activity 45(09th Oct)\\Task_Manager\\TaskManagerAPI\\TaskManagerAPI\\TaskManagerAPI.csproj",
         "packagesPath": "C:\\Users\\UT01336\\.nuget\\packages\\",
-        "outputPath": "X:\\New folder\\Task_Manager\\TaskManagerAPI\\TaskManagerAPI\\obj\\",
+        "outputPath": "X:\\UT01336\\Activity 45(09th Oct)\\Task_Manager\\TaskManagerAPI\\TaskManagerAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\UT01336\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -11,6 +11,7 @@ namespace TaskManagerAPI.DataBase
         public DbSet<TaskItem> Tasks { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Address> Address { get; set; }
+        public DbSet<UserLogin>users { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
